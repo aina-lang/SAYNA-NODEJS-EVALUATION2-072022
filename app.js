@@ -3,8 +3,8 @@ var express = require('express');
 var path = require('path');
 var routers = require('./routes/router');
 var app = express();
-var bd=require("./BDD/database")
-var port=process.env.PORT;
+var bd=require("./BDD/database");
+var port=3000;
 
 // parametrer le view engine 
 app.set('views', path.join(__dirname, 'views'));
