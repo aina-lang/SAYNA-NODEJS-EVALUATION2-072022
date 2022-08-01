@@ -1,10 +1,10 @@
-var createError = require('http-errors');
+require("dotenv").config();
 var express = require('express');
 var path = require('path');
 var routers = require('./routes/router');
 var app = express();
 var bd=require("./BDD/database")
-var port=process.env.PORT || 3000;
+var port=process.env.PORT;
 
 // parametrer le view engine 
 app.set('views', path.join(__dirname, 'views'));

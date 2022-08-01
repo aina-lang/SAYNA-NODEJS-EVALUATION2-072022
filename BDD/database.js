@@ -1,12 +1,14 @@
+require("dotenv").config();
 var apprenant=require("./models/models.js");
 const mysql = require('mysql');
 var app=require("../app");
+
 const db = mysql.createConnection({
-    host: "localhost",
+    host: process.env.HOST,
  
-    user: "root",
+    user: process.env.USER,
  
-    password: "",
+    password: process.env.PASSWORD,
   });
   
   db.connect(function(err) {

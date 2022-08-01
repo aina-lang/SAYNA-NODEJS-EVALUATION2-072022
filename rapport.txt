@@ -1,0 +1,19 @@
+#l'utlisation de l'ajax n'est pas du tout la meilleure solution pour  la connectivite des pages 
+    car un simple modification pourra donnée un occasion aux malveillants
+
+#J'ai utilisé ejs pour faciliter la manipulation des views ainsi que les rendu des requetes
+
+#J'ai installé des dependances comme body-parser  et mysql etc...
+
+#la seule chose que j'ai voulai apporter un modification
+    c'est que tout le monde qui vistera le site peuvent remplir le formulaire qui n'est que pour les apprenants
+    donc il faudra un systeme d'authentification (inscription et login) et ceux qui sont authentifier peuvent remplir la formualire 
+#mais c'est encore un probleme car un apprenants peut mettre son note aux max ou remplir plusieurs fois la formulaire 
+    donc la page  conatact ne doit s'afficher que les champs suivant
+    -firstname
+    -lastname
+    -avis
+    et cree un systeme d'administration pour gerer les notes pour chaque appreanant
+
+
+
